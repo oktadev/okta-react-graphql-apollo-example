@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# React Apollo GraphQL Example Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the companion code for [this blog post]().
 
-## Available Scripts
+## Get Started
 
-In the project directory, you can run:
+Clone the repository:
 
-### `npm start`
+```sh
+git clone https://github.com/oktadeveloper/okta-react-graphql-apollo-example.git
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Change directories into the newly created folder:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```sh
+cd okta-react-graphql-apollo-example
+```
 
-### `npm test`
+Get all dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+npm i
+```
 
-### `npm run build`
+Add a `.env` file with your Okta application settings:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```properties
+REACT_APP_OKTA_CLIENTID=[yourOktaAppClientId}
+REACT_APP_OKTA_URL_BASE={yourOktaOrgURL}
+REACT_APP_OKTA_APP_BASE_URL=http://localhost:3000
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Run the application:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm start
+```
 
-### `npm run eject`
+## Get Help
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+If you have questions specific to this repo or the companion blog post, please leave a comment in the blog post comments.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you have questions about Okta in general, post them in the (Okta Developer Forum](https://devforum.okta.com/).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## License
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[Apache 2.0](LICENSE)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
