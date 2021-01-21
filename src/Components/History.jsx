@@ -39,7 +39,7 @@ function History ({ id, onReturnToHistories }) {
 
     var successLabel;
 
-    if (data.history.flight.launch_success) {
+    if (data.history.flight && data.history.flight.launch_success) {
       successLabel = <span className="text-success">Success!</span>
     }
     else {
@@ -73,7 +73,7 @@ function History ({ id, onReturnToHistories }) {
             Launch Site:
           </div>
           <div className="col-lg-3">
-            {data.history.flight.launch_site.site_name}
+            {data.history.flight ? data.history.flight.launch_site.site_name : 'unnamed'}
           </div>
         </Row>
         <Row>
@@ -81,7 +81,7 @@ function History ({ id, onReturnToHistories }) {
             Rocket Name:
           </div>
           <div className="col-lg-3">
-            {data.history.flight.rocket.rocket_name}
+            {data.history.flight ? data.history.flight.rocket.rocket_name : 'unnamed'}
           </div>
         </Row>
         <Row>
